@@ -6,16 +6,14 @@ variable vpc_security_group_ids {}
 resource "aws_instance" "web" {
 
     ami           = "${var.ami}"
-
     instance_type = "${var.instance_type}"
-
     subnet_id     = "${var.subnet_id}"
+    key_name      = "${aws_key_pair.training.id}"
 
     vpc_security_group_ids = [
        "${var.vpc_security_group_ids}"
     ]
 
-    key_name = "${aws_key_pair.training.id}"
 
     connection {
         user = "ubuntu"
