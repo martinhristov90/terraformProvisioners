@@ -48,15 +48,15 @@ export AWS_SECRET_ACCESS_KEY="asecretkey"
 - After all the values of the variables are set correctly, go ahead and execute `terraform init`. 
 The output should look like this :
 
-    ```shell
-        --- SNIP ---
+```shell
+--- SNIP ---
 
-        * provider.aws: version = "~> 2.11"
+* provider.aws: version = "~> 2.11"
 
-        Terraform has been successfully initialized!
+Terraform has been successfully initialized!
 
-        --- SNIP ---
-    ```
+--- SNIP ---
+```
     
 - Now, Terraform has downloded the AWS provider for you automatically.
 
