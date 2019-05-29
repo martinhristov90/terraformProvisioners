@@ -113,7 +113,7 @@ inline = [
 }
 ```
 
-    The first one is going to copy the shell script named `test.sh` into the instances's `/tmp` folder. The second one is going to enable the `nginx` server. Another interesting part is :
+   The first one is going to copy the shell script named `test.sh` into the instances's `/tmp` folder. The second one is going to enable the `nginx` server. Another interesting part is :
 
 ```
 connection {
@@ -122,7 +122,7 @@ private_key = "${file("~/.ssh/id_rsa")}"
 }
 ```
 
-    It used to establish the needed SSH connection for the providers to function correctly. 
+   It used to establish the needed SSH connection for the providers to function correctly. 
 
 - If everything looks good, execute `terraform apply` to actually provision the resources defined in `server/main.tf`.
 
