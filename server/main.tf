@@ -32,6 +32,7 @@ resource "aws_instance" "web" {
             "bash /tmp/test.sh"
         ]
     }
+    
     tags {
         "name" = "MYMACHINE"
     }
